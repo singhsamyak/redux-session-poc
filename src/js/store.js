@@ -2,12 +2,12 @@
 import { createStore, applyMiddleware } from 'redux';
 import reducers from './reducers';
 // import rootSaga from './sagas';
-import { validateForm } from './middlewares';
+import { authenticateUser, validateForm } from './middlewares';
 
 // const sagaMiddleware = createSagaMiddleware();
 const store = createStore(
   reducers,
-  applyMiddleware(validateForm/*, sagaMiddleware*/)
+  applyMiddleware(authenticateUser, validateForm/*, sagaMiddleware*/)
 );
 // sagaMiddleware.run(rootSaga, store.dispatch);
 

@@ -1,3 +1,7 @@
+import { authenticateUser } from './authenticateUser';
 import { validateForm } from './validateForm';
 
-export { validateForm };
+export {
+  authenticateUser,
+  validateForm
+};
