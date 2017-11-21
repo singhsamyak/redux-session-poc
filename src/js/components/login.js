@@ -16,7 +16,7 @@ const Login = ({
         name='username'
         onChange={handleUsernameChange}
         placeholder='Email Address'
-        type='text'/>
+        type='email'/>
       <InputField
         name='password'
         onChange={handlePasswordChange}

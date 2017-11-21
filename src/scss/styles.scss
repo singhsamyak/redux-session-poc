@@ -18,18 +18,32 @@ body {
   font-size: 12pt;
 }
 
+h1 {
+  font-weight: 500;
+}
+
 main {
   margin: 0 auto;
 }
 
-.login {
-  margin: 60px auto;
-  width: 300px;
+.account {
+  display: none;
 
   & h1 {
-    margin: 40px 0 10px 0;
-    font-weight: 500;
+    margin-top: 40vh;
+    text-align: center;
   }
+}
+
+.container {
+  margin: 0 auto;
+  padding-top: 50px;
+  width: 600px;
+}
+
+.login {
+  margin: 0 auto;
+  width: 300px;
 
   & p {
     color: $black;

@@ -1,3 +1,8 @@
+import { REGX_EMAIL, REGX_PASSWORD } from './constants';
+
 export const formIsFilled = username => password => (
-  username.length > 0 && password.length > 0
+  _emailIsValid(username) && _passwordIsValid(password)
 );
+
+const _emailIsValid = email => REGX_EMAIL.test(email);
+const _passwordIsValid = password => REGX_PASSWORD.test(password);
