@@ -1,7 +1,9 @@
 import { formIsFilled } from './fieldValidators';
-import { hideShow } from './hideShow';
+import { hide, hideShow, show } from './domManipulators';
 
 export {
   formIsFilled,
-  hideShow
+  hide,
+  hideShow,
+  show
 };

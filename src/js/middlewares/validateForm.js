@@ -13,6 +13,7 @@ export const validateForm = store => next => action => {
       const username = _username(store.getState());
       const password = _password(store.getState());
       const type = formIsFilled(username)(password) ? ENABLE_LOGIN : DISABLE_LOGIN;
+
       store.dispatch({ type });
       break;
   };

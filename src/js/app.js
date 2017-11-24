@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import Page from './components/Page';
+import Page from './containers/Page';
 import store from './store';
 import '../scss/styles.scss';
 

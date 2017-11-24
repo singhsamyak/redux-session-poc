@@ -8,7 +8,6 @@ export const authenticateUser = store => next => action => {
 
   switch (action.type) {
     case AUTHENTICATE_USER:
-
       // Mocking authentication...
       setTimeout(() => {
         // When authentication successful...

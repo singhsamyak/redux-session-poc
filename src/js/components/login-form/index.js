@@ -1,16 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Button from './button';
-import InputField from './input-field';
+import InputField from '../input-field';
+import Button from '../button';
 
-const Login = ({
+const LoginForm = ({
   isLoginDisabled,
   handleLogin,
   handlePasswordChange,
   handleUsernameChange
-}) => (
-  <section className='login'>
-    <h1>Sign In</h1>
+}) => {
+  return (
     <form onSubmit={handleLogin}>
       <InputField
         name='username'
@@ -28,13 +27,15 @@ const Login = ({
         isPrimary={true}
         value='Login'/>
     </form>
-  </section>
-);
+  );
+};
 
-Login.propTypes = {
+LoginForm.propTypes = {
+  Button: PropTypes.func,
+  isLoginDisabled: PropTypes.bool,
   handleLogin: PropTypes.func,
   handlePasswordChange: PropTypes.func,
   handleUsernameChange: PropTypes.func
 }
 
-export default Login;
+export default LoginForm;

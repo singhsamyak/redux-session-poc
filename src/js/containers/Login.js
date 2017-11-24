@@ -8,7 +8,6 @@ import { connect } from 'react-redux';
 import Login from '../components/login';
 
 const mapStateToProps = (state) => {
-  console.log('STATE', state); // for debug only
   return {
     isLoginDisabled: state.loginForm.loginDisabled
   }
